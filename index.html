@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Download video from YouTube</title>
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+	<link rel="stylesheet" href="./style.css">
+</head>
+<body>
+
+	<div class="container">
+		<div class="row">
+			<form>
+				<div class="mb-3">
+					<br>
+					<label for="exampleFormControlInput1" class="form-label text-light">Download video from YouTube</label>
+					<div class="d-flex">	
+						<input type="email" class="form-control" id="exampleFormControlInput1" placeholder="YouTube Video Link..." name="url">
+						<button class="btn btn-primary" type="button" id="button-addon1">Send</button>
+					</div>
+				</div>
+			</form>
+		</div>
+
+		<div class="row">
+			<div class="alert alert-danger errorField" role="alert" style="display: none !important">
+				<svg class="bi flex-shrink-0 me-2" width="24" height="24" role="img" aria-label="Danger:"><use xlink:href="#exclamation-triangle-fill"/></svg>
+				<div>
+					<p>Loading...</p>
+				</div>
+			  </div>
+		</div>
+
+        <div class="row" id="pro">
+            
+        </div>
+	</div>
+
+	<script type="text/javascript" src="main.js"></script>
+
+</body>
+</html>
